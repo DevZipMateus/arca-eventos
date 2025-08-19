@@ -30,10 +30,10 @@ const Hero = () => {
             <h1 className="text-gradient mb-6">
               ARCA EVENTOS E CATERING
             </h1>
-            <p className="text-xl md:text-2xl text-accent mb-4 leading-relaxed font-semibold">
+            <p className="text-xl md:text-2xl text-primary mb-4 leading-relaxed font-semibold">
               SERVIR BEM PARA SERVIR SEMPRE
             </p>
-            <p className="text-lg text-foreground/80 mb-8 max-w-xl">
+            <p className="text-lg text-primary/80 mb-8 max-w-xl">
               Oferecemos uma experiência gastronômica satisfatória com soluções práticas 
               para sets de filmagem, eventos corporativos, camarins e muito mais.
             </p>
@@ -58,20 +58,20 @@ const Hero = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               <div className="text-center animate-fade-in animate-delay-200">
-                <Film className="mx-auto mb-2 text-accent" size={32} />
-                <p className="text-sm font-medium text-foreground">Sets de Filmagem</p>
+                <Film className="mx-auto mb-2 text-primary" size={32} />
+                <p className="text-sm font-medium text-primary">Sets de Filmagem</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-400">
-                <Users className="mx-auto mb-2 text-accent" size={32} />
-                <p className="text-sm font-medium text-foreground">Eventos Staff</p>
+                <Users className="mx-auto mb-2 text-primary" size={32} />
+                <p className="text-sm font-medium text-primary">Eventos Staff</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-600">
-                <ChefHat className="mx-auto mb-2 text-accent" size={32} />
-                <p className="text-sm font-medium text-foreground">Camarins</p>
+                <ChefHat className="mx-auto mb-2 text-primary" size={32} />
+                <p className="text-sm font-medium text-primary">Camarins</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-600">
-                <Coffee className="mx-auto mb-2 text-accent" size={32} />
-                <p className="text-sm font-medium text-foreground">Coffee Breaks</p>
+                <Coffee className="mx-auto mb-2 text-primary" size={32} />
+                <p className="text-sm font-medium text-primary">Coffee Breaks</p>
               </div>
             </div>
           </div>
