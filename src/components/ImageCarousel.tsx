@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
@@ -8,6 +8,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 const ImageCarousel = () => {
   // Lista de todas as imagens da galeria
@@ -36,6 +38,11 @@ const ImageCarousel = () => {
   return (
     <div className="relative w-full max-w-6xl mx-auto px-4">
       <Carousel
+        plugins={[
+          Autoplay({
+            delay: 3000,
+          }),
+        ]}
         opts={{
           align: "start",
           loop: true,
