@@ -1,10 +1,16 @@
+
 import { ChefHat, Users, Coffee, Film } from 'lucide-react';
+
 const Hero = () => {
-  return <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
+  return (
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url('/lovable-uploads/d0d123cd-feeb-4d5d-84b3-9e259e0090e6.png')`
-    }}></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+        style={{
+          backgroundImage: `url('/lovable-uploads/1ef6e08b-5204-4473-aea5-282cac6ff853.png')`
+        }}
+      ></div>
       
       {/* White overlay for better text readability */}
       <div className="absolute inset-0 bg-white/[0.76]"></div>
@@ -27,7 +33,7 @@ const Hero = () => {
             <p className="text-xl md:text-2xl text-primary mb-4 leading-relaxed font-semibold">
               SERVIR BEM PARA SERVIR SEMPRE
             </p>
-            <p className="text-lg mb-8 max-w-xl text-slate-950">
+            <p className="text-lg mb-8 max-w-xl text-primary">
               Oferecemos uma experiência gastronômica satisfatória com soluções práticas 
               para sets de filmagem, eventos corporativos, camarins e muito mais.
             </p>
@@ -73,6 +79,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
