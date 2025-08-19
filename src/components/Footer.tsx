@@ -21,26 +21,26 @@ const Footer = () => {
                 href="https://instagram.com/cateringarca"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent-foreground/60 hover:text-accent-foreground transition-colors"
+                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110"
                 aria-label="Instagram da ARCA Catering"
               >
-                <Instagram size={24} />
+                <Instagram size={28} />
               </a>
               <a
                 href="mailto:arcaeventos@live.com"
-                className="text-accent-foreground/60 hover:text-accent-foreground transition-colors"
+                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110"
                 aria-label="E-mail da ARCA Catering"
               >
-                <Mail size={24} />
+                <Mail size={28} />
               </a>
               <a
                 href="https://wa.me/5511993808798"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent-foreground/60 hover:text-accent-foreground transition-colors"
+                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110"
                 aria-label="WhatsApp da ARCA Catering"
               >
-                <Phone size={24} />
+                <Phone size={28} />
               </a>
             </div>
           </div>
