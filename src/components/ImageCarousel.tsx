@@ -43,11 +43,11 @@ const ImageCarousel = () => {
         <CarouselContent>
           {galleryImages.map((image, index) => (
             <CarouselItem key={index} className={index === currentIndex ? 'block' : 'hidden'}>
-              <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-2xl">
+              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] xl:h-[550px] overflow-hidden rounded-2xl bg-muted flex items-center justify-center">
                 <img
                   src={image}
                   alt={`Galeria ARCA ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="max-w-full max-h-full object-contain transition-transform duration-500 hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-opacity duration-300 hover:opacity-0" />
