@@ -1,19 +1,13 @@
-
 import { ChefHat, Users, Coffee, Film } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
+  return <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/lovable-uploads/d0d123cd-feeb-4d5d-84b3-9e259e0090e6.png')`
-        }}
-      ></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url('/lovable-uploads/d0d123cd-feeb-4d5d-84b3-9e259e0090e6.png')`
+    }}></div>
       
       {/* White overlay for better text readability */}
-      <div className="absolute inset-0 bg-white/40"></div>
+      <div className="absolute inset-0 bg-white/[0.76]"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 opacity-20">
@@ -33,24 +27,18 @@ const Hero = () => {
             <p className="text-xl md:text-2xl text-primary mb-4 leading-relaxed font-semibold">
               SERVIR BEM PARA SERVIR SEMPRE
             </p>
-            <p className="text-lg text-primary/80 mb-8 max-w-xl">
+            <p className="text-lg mb-8 max-w-xl text-slate-950">
               Oferecemos uma experiência gastronômica satisfatória com soluções práticas 
               para sets de filmagem, eventos corporativos, camarins e muito mais.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <a
-                href="https://wa.me/5511993808798"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-hero"
-              >
+              <a href="https://wa.me/5511993808798" target="_blank" rel="noopener noreferrer" className="btn-hero">
                 Solicitar Orçamento
               </a>
-              <button
-                onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-hero-outline"
-              >
+              <button onClick={() => document.querySelector('#servicos')?.scrollIntoView({
+              behavior: 'smooth'
+            })} className="btn-hero-outline">
                 Nossos Serviços
               </button>
             </div>
@@ -80,17 +68,11 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-150"></div>
-              <img 
-                src="/lovable-uploads/baa4ba21-4d18-486a-91ab-b4c13c020abf.png" 
-                alt="ARCA Eventos e Catering - Experiência Gastronômica de Qualidade" 
-                className="relative z-10 w-full max-w-md lg:max-w-lg h-auto"
-              />
+              <img src="/lovable-uploads/baa4ba21-4d18-486a-91ab-b4c13c020abf.png" alt="ARCA Eventos e Catering - Experiência Gastronômica de Qualidade" className="relative z-10 w-full max-w-md lg:max-w-lg h-auto" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
