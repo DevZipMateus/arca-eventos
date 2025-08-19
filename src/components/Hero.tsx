@@ -1,3 +1,4 @@
+
 import { ChefHat, Users, Coffee, Film } from 'lucide-react';
 const Hero = () => {
   return <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
@@ -27,7 +28,7 @@ const Hero = () => {
             <p className="text-xl md:text-2xl text-primary mb-4 leading-relaxed font-semibold">
               SERVIR BEM PARA SERVIR SEMPRE
             </p>
-            <p className="mb-8 max-w-xl text-2xl text-left text-[#0e0c00]">
+            <p className="mb-8 max-w-xl text-2xl text-left text-primary">
               Oferecemos uma experiência gastronômica satisfatória com soluções práticas 
               para sets de filmagem, eventos corporativos, camarins e muito mais.
             </p>
@@ -68,7 +69,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-150"></div>
-              <img src="/lovable-uploads/baa4ba21-4d18-486a-91ab-b4c13c020abf.png" alt="ARCA Eventos e Catering - Experiência Gastronômica de Qualidade" className="relative z-10 w-full max-w-md lg:max-w-lg h-auto" />
+              <img src="/lovable-uploads/baa4ba21-4d18-486a-91ab-b4c13c020abf.png" alt="ARCA Eventos e Catering - Experiência Gastronômica de Qualidade" className="relative z-10 w-full max-w-lg lg:max-w-xl xl:max-w-2xl h-auto" />
             </div>
           </div>
         </div>
