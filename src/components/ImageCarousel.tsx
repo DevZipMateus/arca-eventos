@@ -1,10 +1,15 @@
 
-import React, { useState, useEffect } from 'react';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const ImageCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   // Lista de todas as imagens da galeria
   const galleryImages = [
     '/lovable-uploads/galeria/336439165_779462846568688_4518622171549050480_n.jpg',
@@ -28,57 +33,36 @@ const ImageCarousel = () => {
     '/lovable-uploads/galeria/530402904_18519274159057447_8596057511853780347_n.jpg'
   ];
 
-  // Troca automática a cada 3 segundos
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [galleryImages.length]);
-
   return (
-    <div className="relative w-full max-w-7xl mx-auto px-2">
-      <Carousel className="w-full">
+    <div className="relative w-full max-w-6xl mx-auto px-4">
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        className="w-full"
+      >
         <CarouselContent>
           {galleryImages.map((image, index) => (
-            <CarouselItem key={index} className={index === currentIndex ? 'block' : 'hidden'}>
-              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[500px] xl:h-[550px] overflow-hidden rounded-2xl bg-gray-900 flex items-center justify-center">
-                <img
-                  src={image}
-                  alt={`Galeria ARCA ${index + 1}`}
-                  className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-opacity duration-300 hover:opacity-0" />
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <div className="p-1">
+                <Card>
+                  <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden rounded-lg">
+                    <img
+                      src={image}
+                      alt={`Galeria ARCA ${index + 1}`}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      loading="lazy"
+                    />
+                  </CardContent>
+                </Card>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious 
-          className="left-2 md:left-4 bg-white/90 hover:bg-white shadow-lg" 
-          onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + galleryImages.length) % galleryImages.length)}
-        />
-        <CarouselNext 
-          className="right-2 md:right-4 bg-white/90 hover:bg-white shadow-lg"
-          onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length)}
-        />
+        <CarouselPrevious className="bg-white/90 hover:bg-white shadow-lg" />
+        <CarouselNext className="bg-white/90 hover:bg-white shadow-lg" />
       </Carousel>
-      
-      {/* Indicadores */}
-      <div className="flex justify-center mt-6 space-x-2 flex-wrap gap-2">
-        {galleryImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-              index === currentIndex 
-                ? 'bg-primary scale-110 shadow-lg' 
-                : 'bg-muted hover:bg-primary/50'
-            }`}
-          />
-        ))}
-      </div>
     </div>
   );
 };
