@@ -1,19 +1,13 @@
-
 import { ChefHat, Users, Coffee, Film } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
+  return <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-        style={{
-          backgroundImage: `url('/lovable-uploads/1ef6e08b-5204-4473-aea5-282cac6ff853.png')`
-        }}
-      ></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url('/lovable-uploads/1ef6e08b-5204-4473-aea5-282cac6ff853.png')`
+    }}></div>
       
       {/* White overlay for better text readability */}
-      <div className="absolute inset-0 bg-white/[0.76]"></div>
+      <div className="absolute inset-0 bg-white/[0.22]"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 opacity-20">
@@ -26,14 +20,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="animate-slide-in-left">
+          <div className="animate-slide-in-left bg-white/[0.43]">
             <h1 className="text-4xl md:text-6xl lg:text-7xl leading-tight font-display font-semibold text-primary mb-6">
               ARCA EVENTOS E CATERING
             </h1>
             <p className="text-xl md:text-2xl text-primary mb-4 leading-relaxed font-semibold">
               SERVIR BEM PARA SERVIR SEMPRE
             </p>
-            <p className="text-lg mb-8 max-w-xl text-primary">
+            <p className="text-lg mb-8 max-w-xl text-slate-950">
               Oferecemos uma experiência gastronômica satisfatória com soluções práticas 
               para sets de filmagem, eventos corporativos, camarins e muito mais.
             </p>
@@ -52,10 +46,10 @@ const Hero = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               <div className="text-center animate-fade-in animate-delay-200">
-                <Film className="mx-auto mb-2 text-primary" size={32} />
+                <Film size={32} className="mx-auto mb-2 text-primary bg-transparent" />
                 <p className="text-sm font-medium text-primary">Sets de Filmagem</p>
               </div>
-              <div className="text-center animate-fade-in animate-delay-400">
+              <div className="text-center animate-fade-in animate-delay-400 bg-transparent">
                 <Users className="mx-auto mb-2 text-primary" size={32} />
                 <p className="text-sm font-medium text-primary">Eventos Staff</p>
               </div>
@@ -79,8 +73,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
