@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
-          <div className="animate-slide-in-left bg-white/[0.58] rounded-lg">
+          <div className="animate-slide-in-left bg-white/60 rounded-2xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl leading-tight font-display font-semibold text-primary mb-6">
               ARCA EVENTOS E CATERING
             </h1>
