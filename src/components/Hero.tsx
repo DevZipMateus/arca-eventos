@@ -4,8 +4,16 @@ import { ChefHat, Users, Coffee, Film } from 'lucide-react';
 const Hero = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary"></div>
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/lovable-uploads/9d431d12-50bb-48e6-9c1a-d89355d7abfd.png')`
+        }}
+      ></div>
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/60"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 opacity-20">
@@ -22,10 +30,10 @@ const Hero = () => {
             <h1 className="text-gradient mb-6">
               ARCA EVENTOS E CATERING
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white mb-4 leading-relaxed font-semibold">
               SERVIR BEM PARA SERVIR SEMPRE
             </p>
-            <p className="text-lg text-foreground/80 mb-8 max-w-xl">
+            <p className="text-lg text-white/90 mb-8 max-w-xl">
               Oferecemos uma experiência gastronômica satisfatória com soluções práticas 
               para sets de filmagem, eventos corporativos, camarins e muito mais.
             </p>
@@ -41,7 +49,7 @@ const Hero = () => {
               </a>
               <button
                 onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-hero-outline"
+                className="btn-hero-outline-white"
               >
                 Nossos Serviços
               </button>
@@ -50,20 +58,20 @@ const Hero = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               <div className="text-center animate-fade-in animate-delay-200">
-                <Film className="mx-auto mb-2 text-primary" size={32} />
-                <p className="text-sm font-medium">Sets de Filmagem</p>
+                <Film className="mx-auto mb-2 text-white" size={32} />
+                <p className="text-sm font-medium text-white">Sets de Filmagem</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-400">
-                <Users className="mx-auto mb-2 text-primary" size={32} />
-                <p className="text-sm font-medium">Eventos Staff</p>
+                <Users className="mx-auto mb-2 text-white" size={32} />
+                <p className="text-sm font-medium text-white">Eventos Staff</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-600">
-                <ChefHat className="mx-auto mb-2 text-primary" size={32} />
-                <p className="text-sm font-medium">Camarins</p>
+                <ChefHat className="mx-auto mb-2 text-white" size={32} />
+                <p className="text-sm font-medium text-white">Camarins</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-600">
-                <Coffee className="mx-auto mb-2 text-primary" size={32} />
-                <p className="text-sm font-medium">Coffee Breaks</p>
+                <Coffee className="mx-auto mb-2 text-white" size={32} />
+                <p className="text-sm font-medium text-white">Coffee Breaks</p>
               </div>
             </div>
           </div>
