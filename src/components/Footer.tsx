@@ -18,17 +18,17 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com/cateringarca"
+                href="https://www.instagram.com/cateringarca/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110"
+                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110 cursor-pointer"
                 aria-label="Instagram da ARCA Catering"
               >
                 <Instagram size={28} />
               </a>
               <a
                 href="mailto:arcaeventos@live.com"
-                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110"
+                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110 cursor-pointer"
                 aria-label="E-mail da ARCA Catering"
               >
                 <Mail size={28} />
@@ -37,7 +37,7 @@ const Footer = () => {
                 href="https://wa.me/5511993808798"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110"
+                className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110 cursor-pointer"
                 aria-label="WhatsApp da ARCA Catering"
               >
                 <Phone size={28} />
