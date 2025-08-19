@@ -38,42 +38,42 @@ const ImageCarousel = () => {
   }, [galleryImages.length]);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div className="relative w-full max-w-6xl mx-auto px-4">
       <Carousel className="w-full">
         <CarouselContent>
           {galleryImages.map((image, index) => (
             <CarouselItem key={index} className={index === currentIndex ? 'block' : 'hidden'}>
-              <div className="relative aspect-[16/10] overflow-hidden rounded-2xl">
+              <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-2xl">
                 <img
                   src={image}
                   alt={`Galeria ARCA ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-contain bg-muted transition-transform duration-500 hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 hover:opacity-0" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-opacity duration-300 hover:opacity-0" />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
         <CarouselPrevious 
-          className="left-4 bg-white/90 hover:bg-white" 
+          className="left-2 md:left-4 bg-white/90 hover:bg-white shadow-lg" 
           onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + galleryImages.length) % galleryImages.length)}
         />
         <CarouselNext 
-          className="right-4 bg-white/90 hover:bg-white"
+          className="right-2 md:right-4 bg-white/90 hover:bg-white shadow-lg"
           onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length)}
         />
       </Carousel>
       
       {/* Indicadores */}
-      <div className="flex justify-center mt-6 space-x-2">
+      <div className="flex justify-center mt-6 space-x-2 flex-wrap gap-2">
         {galleryImages.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
               index === currentIndex 
-                ? 'bg-primary scale-110' 
+                ? 'bg-primary scale-110 shadow-lg' 
                 : 'bg-muted hover:bg-primary/50'
             }`}
           />
