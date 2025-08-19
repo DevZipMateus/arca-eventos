@@ -2,6 +2,12 @@
 import { Instagram, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
+  const handleInstagramClick = (e: React.MouseEvent) => {
+    console.log('Instagram link clicked');
+    console.log('URL: https://www.instagram.com/cateringarca/');
+    // Let the default behavior proceed
+  };
+
   return (
     <footer className="bg-accent text-accent-foreground py-12">
       <div className="container mx-auto px-4">
@@ -21,6 +27,7 @@ const Footer = () => {
                 href="https://www.instagram.com/cateringarca/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleInstagramClick}
                 className="text-white hover:text-primary transition-all duration-300 transform hover:scale-110 cursor-pointer"
                 aria-label="Instagram da ARCA Catering"
               >
