@@ -47,7 +47,7 @@ const ImageCarousel = () => {
                 <img
                   src={image}
                   alt={`Galeria ARCA ${index + 1}`}
-                  className="w-full h-full object-contain bg-muted transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent transition-opacity duration-300 hover:opacity-0" />
