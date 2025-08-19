@@ -12,8 +12,8 @@ const Hero = () => {
         }}
       ></div>
       
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      {/* White overlay for better text readability */}
+      <div className="absolute inset-0 bg-white/40"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 opacity-20">
@@ -30,10 +30,10 @@ const Hero = () => {
             <h1 className="text-gradient mb-6">
               ARCA EVENTOS E CATERING
             </h1>
-            <p className="text-xl md:text-2xl text-white mb-4 leading-relaxed font-semibold">
+            <p className="text-xl md:text-2xl text-accent mb-4 leading-relaxed font-semibold">
               SERVIR BEM PARA SERVIR SEMPRE
             </p>
-            <p className="text-lg text-white/90 mb-8 max-w-xl">
+            <p className="text-lg text-foreground/80 mb-8 max-w-xl">
               Oferecemos uma experiência gastronômica satisfatória com soluções práticas 
               para sets de filmagem, eventos corporativos, camarins e muito mais.
             </p>
@@ -49,7 +49,7 @@ const Hero = () => {
               </a>
               <button
                 onClick={() => document.querySelector('#servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn-hero-outline-white"
+                className="btn-hero-outline"
               >
                 Nossos Serviços
               </button>
@@ -58,20 +58,20 @@ const Hero = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               <div className="text-center animate-fade-in animate-delay-200">
-                <Film className="mx-auto mb-2 text-white" size={32} />
-                <p className="text-sm font-medium text-white">Sets de Filmagem</p>
+                <Film className="mx-auto mb-2 text-accent" size={32} />
+                <p className="text-sm font-medium text-foreground">Sets de Filmagem</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-400">
-                <Users className="mx-auto mb-2 text-white" size={32} />
-                <p className="text-sm font-medium text-white">Eventos Staff</p>
+                <Users className="mx-auto mb-2 text-accent" size={32} />
+                <p className="text-sm font-medium text-foreground">Eventos Staff</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-600">
-                <ChefHat className="mx-auto mb-2 text-white" size={32} />
-                <p className="text-sm font-medium text-white">Camarins</p>
+                <ChefHat className="mx-auto mb-2 text-accent" size={32} />
+                <p className="text-sm font-medium text-foreground">Camarins</p>
               </div>
               <div className="text-center animate-fade-in animate-delay-600">
-                <Coffee className="mx-auto mb-2 text-white" size={32} />
-                <p className="text-sm font-medium text-white">Coffee Breaks</p>
+                <Coffee className="mx-auto mb-2 text-accent" size={32} />
+                <p className="text-sm font-medium text-foreground">Coffee Breaks</p>
               </div>
             </div>
           </div>
