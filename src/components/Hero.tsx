@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="animate-slide-in-left">
-            <h1 className="text-gradient mb-6">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl leading-tight font-display font-semibold text-primary mb-6">
               ARCA EVENTOS E CATERING
             </h1>
             <p className="text-xl md:text-2xl text-primary mb-4 leading-relaxed font-semibold">
