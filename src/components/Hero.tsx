@@ -1,7 +1,7 @@
 
 import { ChefHat, Users, Coffee, Film } from 'lucide-react';
 const Hero = () => {
-  return <section id="inicio" className="relative h-screen flex items-center overflow-hidden pt-16 md:pt-20">
+  return <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-20 mb-8 md:mb-12">
       {/* Background image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: `url('/lovable-uploads/1ef6e08b-5204-4473-aea5-282cac6ff853.png')`
@@ -18,8 +18,8 @@ const Hero = () => {
         <Coffee size={100} className="text-accent" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 h-full">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full max-h-full overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-8 md:py-12">
           {/* Left content */}
           <div className="animate-slide-in-left bg-white/60 rounded-2xl p-4 md:p-6">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight font-display font-semibold text-primary mb-4 md:mb-6 overflow-hidden">
