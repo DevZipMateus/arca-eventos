@@ -5,7 +5,7 @@ const WhatsAppFloat = () => {
       href="https://wa.me/5511993808798"
       target="_blank"
       rel="noopener noreferrer"
-      className="group fixed bottom-6 right-6 z-[9999] bg-green-500 hover:bg-green-600 text-white rounded-full p-2 shadow-2xl hover:shadow-green-500/50 transition-all duration-300 ease-in-out transform hover:scale-110 animate-pulse cursor-pointer"
+      className="group fixed bottom-6 right-6 z-[9999] bg-green-500 hover:bg-green-600 text-white rounded-full p-2 shadow-2xl hover:shadow-green-500/50 transition-all duration-300 ease-in-out transform hover:scale-110 hover:animate-pulse cursor-pointer"
       aria-label="Falar no WhatsApp"
     >
       <img 
