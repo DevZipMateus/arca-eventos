@@ -1,7 +1,7 @@
 
 import { ChefHat, Users, Coffee, Film } from 'lucide-react';
 const Hero = () => {
-  return <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-20">
+  return <section id="inicio" className="relative h-screen flex items-center overflow-hidden pt-16 md:pt-20">
       {/* Background image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: `url('/lovable-uploads/1ef6e08b-5204-4473-aea5-282cac6ff853.png')`
@@ -18,8 +18,8 @@ const Hero = () => {
         <Coffee size={100} className="text-accent" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center overflow-x-hidden">
+      <div className="container mx-auto px-4 relative z-10 h-full">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full max-h-full overflow-hidden">
           {/* Left content */}
           <div className="animate-slide-in-left bg-white/60 rounded-2xl p-4 md:p-6">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight font-display font-semibold text-primary mb-4 md:mb-6 overflow-x-hidden">
@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
 
             {/* Quick stats */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6">
               <div className="text-center animate-fade-in animate-delay-200">
                 <Film size={32} className="mx-auto mb-2 text-primary bg-transparent" />
                 <p className="text-sm font-medium text-primary">Sets de Filmagem</p>
