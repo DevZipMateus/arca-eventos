@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full max-h-full overflow-hidden">
           {/* Left content */}
           <div className="animate-slide-in-left bg-white/60 rounded-2xl p-4 md:p-6">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-tight font-display font-semibold text-primary mb-4 md:mb-6 overflow-x-hidden">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight font-display font-semibold text-primary mb-4 md:mb-6 overflow-hidden">
               ARCA EVENTOS E CATERING
             </h1>
             <p className="text-xl md:text-2xl text-primary mb-4 leading-relaxed font-semibold">
