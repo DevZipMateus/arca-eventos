@@ -85,6 +85,29 @@ window.addEventListener('resize', () => {
   resetAutoplay();
 })();
 
+// ===== WHATSAPP PICKER (escolher número SP ou RJ) =====
+function closeAllWaPickers(except) {
+  document.querySelectorAll('.wa-picker.open').forEach((picker) => {
+    if (picker !== except) picker.classList.remove('open');
+  });
+}
+
+document.querySelectorAll('.wa-picker-trigger').forEach((trigger) => {
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const picker = trigger.closest('.wa-picker');
+    const isOpen = picker.classList.contains('open');
+    closeAllWaPickers();
+    picker.classList.toggle('open', !isOpen);
+  });
+});
+
+document.addEventListener('click', () => closeAllWaPickers());
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeAllWaPickers();
+});
+
 // ===== ANIMAÇÃO FADE-IN AO SCROLL =====
 const fadeEls = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver((entries) => {
