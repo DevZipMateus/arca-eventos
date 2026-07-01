@@ -1,73 +1,30 @@
-# Welcome to your Lovable project
+# ARCA Eventos e Catering — Site Institucional
 
-## Project info
+Site institucional estático (HTML/CSS/JS puro) da ARCA Eventos e Catering.
 
-**URL**: https://lovable.dev/projects/e6197adf-336b-4f42-864a-102df10058fc
+## Estrutura
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/e6197adf-336b-4f42-864a-102df10058fc) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+arca-eventos/
+├── index.html       # Página principal
+├── style.css        # Estilos
+├── script.js        # Menu mobile, carrossel, seletor de WhatsApp, animações
+├── favicon.ico
+├── robots.txt
+└── img/
+    ├── logo.png
+    ├── hero-bg.png
+    ├── whatsapp-icon.png
+    └── galeria/      # Fotos da galeria (carrossel)
 ```
 
-**Edit a file directly in GitHub**
+## Contato
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- WhatsApp SP: (11) 99380-8798
+- WhatsApp RJ: (21) 99855-4073
+- E-mail: arcaeventos@live.com
+- Instagram: [@cateringarca](https://instagram.com/cateringarca)
 
-**Use GitHub Codespaces**
+## Deploy
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e6197adf-336b-4f42-864a-102df10058fc) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Basta subir os arquivos acima (não é necessário Node.js, build ou `node_modules`) para a hospedagem (ex.: Hostinger).
